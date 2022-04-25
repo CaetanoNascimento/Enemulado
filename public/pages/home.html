@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="../js/script.js"></script>
+    <title>Home</title>
+</head>
+
+<body >
+    <h1></h1>
+    <li>
+        <!-- <a href="/logout">logout</a> -->
+        <!-- onload="jwt_auth_load()" -->
+        <a onclick="logout()">logout</a>
+        <a href="/perfil">perfil</a>
+        <a onclick="Chamararraysimulados()">Simulados</a>
+        <a onclick="limpartoken()">_______Limpar______</a>
+    </li>
+
+    <div class="content">
+        <table border="1">
+            <thead>
+                <th class="center">ID</th>
+                <th>Nome</th>
+                <th>Nota</th>
+                <th class="center">Duração</th>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+
+
+ 
+</body>
+
+</html>

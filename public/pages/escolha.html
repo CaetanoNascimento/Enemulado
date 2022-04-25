@@ -1,0 +1,149 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enemulado</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script type="text/javascript" src="../js/imagem.js"></script>
+
+</head>
+
+<body  onload="jwt_auth_load()">
+    <div class="principal">
+        <div class="row-1">
+            <div class="col-5" id=logo>
+                <button><a href="/"><img src="../img/logo1.png"></a></button>
+
+            </div>
+
+            <div class="col-7">
+                <dl id="menu">
+                    <dt><a href="/">INÍCIO</a></dt>
+                    <dt><a href="/pages/quemsomos">QUEM SOMOS</a></dt>
+                    <a href="/usuarios/perfil"><img id="perfil" src="../img/Ellipse2.png"></a>
+                </dl>
+
+            </div>
+        </div>
+        <div class="row-1 simulados">
+            <div class="col-12">
+                <h2>SIMULADOS DISPONIVEIS</h2>
+            </div>
+        </div>
+
+        <div class="row-1 mouse">
+            <div class="col-7 muda">
+                <div onclick="simuladoCN()" onmouseover="mudaimagem4()" onmouseleave="mousesai4()" class="col-3 acor">
+                    <img  id="imagemcor" src="../img/professor_uncolor.png">
+                    <span>CIÊNCIAS DA NATUREZA</span>
+                </div>
+
+                <div onclick="simuladoCH()" onmouseover="mudaimagem5()" onmouseleave="mousesai5()" class="col-3 acor">
+                    <img id="imagemcor1" src="../img/mundo.png">
+                    <span>CIÊNCIAS HUMANAS</span>
+
+                </div>
+                <div class="col-5 muda">
+                    <div onclick="simuladoMT()" onmouseover="mudaimagem6()" onmouseleave="mousesai6()" class="col-3 acor">
+                        <img id="imagemcor2" src="../img/molequinho.png">
+                        <span>MATEMATICA2</span>
+                    </div>
+
+                    <div onclick="simuladoLC()" onmouseover="mudaimagem7()" onmouseleave="mousesai7()" class="col-3 acor">
+                        <img id="imagemcor3" src="../img/livros.png">
+                        <span>LINGUAGENS E CÓDIGOS</span>
+                    </div>
+                </div>
+                <div class="row-1 mudado ">
+                    <div onclick="simuladoD1()" onmouseover="mudaimagem9()" onmouseleave="mousesai9()" class="col-12 mudeiiiii">
+                        <h2>PRIMEIRO DIA </h2>
+                        <img id="imagemcor6" src="../img/mundo.png"> <img  id="imagemcor7" src="../img/livros.png">
+                        <span>CIÊNCIAS HUMANAS</span> <span>LINGUAGENS E CÓDIGOS</span>
+
+                    </div>
+                    <div onclick="simuladoD2()" onmouseover="mudaimagem8()" onmouseleave="mousesai8()"class="col-12 mudeiiiii">
+                        <h2>SEGUNDO DIA </h2>
+                        <img id ="imagemcor4"src="../img/professor_uncolor.png"> <img id="imagemcor5"src="../img/molequinho.png">
+                        <span>CIÊNCIAS DA NATUREZA</span> <span>MATEMATICA</span>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-5 prooo">
+                <img src="/img/prooo.png">
+                <img src="/img/prooo.png">
+            </div>
+
+
+
+        </div>
+
+
+    </div>
+    <header class="header show-on-scroll">
+        <div class="row-1 ">
+            <div class="col-12 azul">
+                <div class="row-1">
+                    <div class="col-6">
+                        <div class="row-1">
+                            <div class="col-12">
+                                <div class="row-1">
+                                    <div class="col-4">
+                                        <a href="/pages/quemsomos"><span class="links quem_somos" id="rains">QUEM SOMOS</span></a>
+                                        <a href="#CARREIRA"><span class="links quem_somos">BLOG</span></a>
+                                        <a href="#ARAINS"><span class="links quem_somos">CONTATO</span></a>
+                                    </div>
+    
+                                    <div class="col-4">
+                                        <a href="#BLOG"><span class="links" id="carreira">CARREIRA</span></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#CONTATO"><span class="links" >A RAINS</span></a>
+                                    </div>
+        
+                                       
+                                        
+                                        
+                                 
+                                </div>
+                                <div class="row-1">
+                                    <div class="col-12 sociais">
+                                        <img src="../img/S.png">
+                                        <img src="../img/IN.png">
+                                        <img src="../img/INSTA.png">
+                                        <img src="../img/TWIT.png">
+                                    </div>              
+    
+                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+    
+        
+        
+        
+        
+        
+                    </div>
+        
+                    <div class="col-6 EB">
+                        <button><a href="/"><img id="enemuladinho" src="../img/logo_rodape.png"></a></button>
+                        <img id="burrozinho" src="../img/burrinho.png">
+                    </div>
+                </div>
+     
+                </div>
+    
+        </div>
+    </header>
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

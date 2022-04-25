@@ -1,0 +1,240 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enemulado</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="customUploadStyle.css">
+    <script type="text/javascript" src="../js/script.js"></script>
+
+</head>
+
+<body onload="jwt_auth_load(); questoes.carregar_dados()">
+    <div class="principal">
+        <div class="row-1">
+            <div class="col-5" id=logo>
+                <button><a href="/"><img src="../img/logo1.png"></a></button>
+
+            </div>
+        </div>
+
+        <div class="row-1 ">
+            <div class="col-12 base">
+                <span class="inserir_novas">INSERIR NOVAS QUESTÕES NA NOSSA BASE DE DADOS</span>
+                <div class="row-1 questionario">
+                    <div class="col-2 ">
+                        <span class="dados_questao">Nº QUESTÃO</span>
+                        <input type="number" id="numero_questao" class="questionario1 menor">
+                    </div>
+
+                    <div class="col-2 maior">
+                        <span class="dados_questao">MATERIA</span>
+                        <input list="mate" name="browser" class="questionario1" id="materia">
+                        <datalist id="mate" class="materia">
+                        </datalist>
+                    </div>
+
+                    <div class="col-2">
+                        <span class="dados_questao">INSTITUIÇÃO</span>
+                        <input list="institui" name="browser" class="questionario1" id="instituicao">
+                        <datalist id="institui" class="instituicao">
+
+                        </datalist>
+                    </div>
+
+                    <div class="col-2">
+                        <span class="dados_questao">COR DA PROVA</span>
+                        <input list="cor_pro" name="browser" class="questionario1 menor" id="cor_prova">
+                        <datalist id="cor_pro">
+                            <option value="ROSA">
+                            <option value="AMARELA">
+                            <option value="CINZA">
+                            <option value="AZUL">
+                        </datalist>
+                    </div>
+
+                    <div class="col-2 ano">
+                        <span class="dados_questao">ANO </span>
+                        <input type="text" id="ano_prova" class="questionario1 menor" maxlength="4">
+                    </div>
+                </div>
+
+                <div class="row-1 ">
+                    <div class="col-4-selec png">
+                        <span class="dados_questao">IMAGEM DA QUESTÃO</span>
+                        <input type="file" class="upload" accept="image/png, image/jpeg" id="imagem_top">
+                    </div>
+                    <div class="col-4-selec png">
+                        <label for="posicao_imagem">POSIÇÃO DA IMAGEM</label>
+                        <select onchange="questoes.posicao_selecionada()" name="posicao_imagem" id="posicao_imagem"
+                            type="text" class="posicao">
+                            <option>Escolha uma posição</option>
+                            <option value="TOPO">TOPO</option>>
+                            <option value="CENTRO">CENTRO</option>
+                            <option value="FINAL">FINAL</option>
+                        </select>
+                    </div>
+
+                </div>
+
+                <div class="row-1 ">
+                    <div class="col-12 textoPC">
+                        <div class="row-1" id="textoprin">
+                            <div class="col-12" id="principal_texto">
+                                <span class="dados_questao">TEXTO PRINCIPAL</span>
+                                <input type="text" class="textoP" id="textoprincipal">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="row-1 textoPC">
+                    <div class="col-12">
+                        <span class="dados_questao">QUESTÃO</span>
+                        <input type="text" class="textoP" id="textoquestao">
+                    </div>
+                </div>
+
+
+
+                <div class="row-1 resposta">
+                    <div class="col-12">
+                        <span class="dados_questao">TEXTO - RESPOSTA (A)</span>
+                        <input type="text" id="alternativa_A">
+                    </div>
+                </div>
+                <div class="row-1 resposta">
+                    <div class="col-12">
+                        <span class="dados_questao">TEXTO - RESPOSTA (B)</span>
+                        <input type="text" id="alternativa_B">
+                    </div>
+                </div>
+                <div class="row-1 resposta">
+                    <div class="col-12">
+                        <span class="dados_questao">TEXTO - RESPOSTA (C)</span>
+                        <input type="text" id="alternativa_C">
+                    </div>
+                </div>
+
+                <div class="row-1 resposta">
+                    <div class="col-12">
+                        <span class="dados_questao">TEXTO - RESPOSTA (D)</span>
+                        <input type="text" id="alternativa_D">
+                    </div>
+                </div>
+
+                <div class="row-1 resposta">
+                    <div class="col-12">
+                        <span class="dados_questao">TEXTO - RESPOSTA (E)</span>
+                        <input type="text" id="alternativa_E">
+                    </div>
+                </div>
+
+
+                <div class="row-1">
+                    <span class="corretas">RESPOSTA CORRETA:</span>
+
+                </div>
+                <div class="row-1 certo">
+
+                    <label class="container">A
+                        <input type="checkbox" checked="checked" name="check" onclick="questoes.umcheck(this)"
+                            value="a">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">B
+                        <input type="checkbox" name="check" onclick="questoes.umcheck(this)" value="b">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">C
+                        <input type="checkbox" name="check" onclick="questoes.umcheck(this)" value="c">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">D
+                        <input type="checkbox" name="check" onclick="questoes.umcheck(this)" value="d">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">E
+                        <input type="checkbox" name="check" onclick="questoes.umcheck(this)" value="e">
+                        <span class="checkmark"></span>
+                    </label>
+
+                </div>
+
+                <div class="row-1">
+                    <button class="ultimoBO" onclick="questoes.cadastrar_questao()">CADASTRAR</button>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <header class="header show-on-scroll">
+        <div class="row-1 ">
+            <div class="col-12 azul">
+                <div class="row-1">
+                    <div class="col-6">
+                        <div class="row-1">
+                            <div class="col-12">
+                                <div class="row-1">
+                                    <div class="col-4">
+                                        <a href="/pages/quemsomos"><span class="links quem_somos" id="rains">QUEM
+                                                SOMOS</span></a>
+                                        <a href="#CARREIRA"><span class="links quem_somos">BLOG</span></a>
+                                        <a href="#ARAINS"><span class="links quem_somos">CONTATO</span></a>
+                                    </div>
+
+                                    <div class="col-4">
+                                        <a href="#BLOG"><span class="links" id="carreira">CARREIRA</span></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#CONTATO"><span class="links">A RAINS</span></a>
+                                    </div>
+
+
+
+
+
+                                </div>
+                                <div class="row-1">
+                                    <div class="col-12 sociais">
+                                        <img src="../img/S.png">
+                                        <img src="../img/IN.png">
+                                        <img src="../img/INSTA.png">
+                                        <img src="../img/TWIT.png">
+                                    </div>
+
+
+
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+
+                    <div class="col-6 EB">
+                        <button><a href="/"><img id="enemuladinho" src="../img/logo_rodape.png"></a></button>
+                        <img id="burrozinho" src="../img/burrinho.png">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </header>
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

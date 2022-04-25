@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Enemulado </title>
+    <link rel="stylesheet" href="../css/style.css">
+
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="../js/script.js"></script>
+  
+   
+
+    
+</head>
+
+<body onload="mudar_valor_1_4(); jwt_auth_load()">
+    <div class="sidebar">
+        <div class="logo-details">
+
+            <a href="/"><div class="logo_name"><img src="../img/logo_rodape.png" class="rodape"></div></a>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="/usuarios/perfil">
+                    <img src="../img/perfil.png">
+                    <span class="links_name">MEU PERFIL</span>
+                </a>
+                <span class="tooltip">MEU PERFIL</span>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="../img/computador.png">
+                    <span class="links_name">DASHBOARD</span>
+                </a>
+                <span class="tooltip">DASHBOARD</span>
+            </li>
+
+
+            <li class="profile">
+                <div class="profile-details">
+                    <img onclick="logout()" src="../img/sair.png" profileImg>
+                    <div class="name_job">
+                        <div class="name">SAIR</div>
+                        <div class="job"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+        <div class="row-1">
+            <div class="col-12  ">
+                <a href="/pages/escolha"> <button  class="entrar_simulado"> NOVO SIMULADO </button></a>
+                
+            </div>
+        </div>
+        <div class="row-1">
+            <div class="col-12">
+                <div class="row-1">
+                    <div class="col-3 pontuacao">
+                        <div class="row-1">
+                            <div class="col-12">
+                                <div class="row-1">
+                                    <div class="col-6 areaconhecimento">
+                                        <span>Ciencia da Humanas</span>
+                                    </div>
+                                    <div class="col-6 media">
+                                        <p id="CH_media" >000</p>
+                                    </div>
+                                </div>
+          
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-3 pontuacao">
+                        <div class="row-1">
+                            <div class="col-12">
+                                <div class="row-1">
+                                    <div class="col-6 areaconhecimento">
+                                        <span>Ciencia da Natureza</span>
+                                    </div>
+                                    <div class="col-6 media">
+                                        <p id="CN_media" >000</p>
+                                    </div>
+                                </div>
+          
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-3 pontuacao">
+                        <div class="row-1">
+                            <div class="col-12">
+                                <div class="row-1">
+                                    <div class="col-6 areaconhecimento">
+                                        <span>Linguagens e Códigos</span>
+                                    </div>
+                                    <div class="col-6 media">
+                                        <p id="LC_media" >000</p>
+                                    </div>
+                                </div>
+          
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-3 pontuacao">
+                        <div class="row-1">
+                            <div class="col-12">
+                                <div class="row-1">
+                                    <div class="col-6 areaconhecimento">
+                                        <span>Matemática</span>
+                                    </div>
+                                    <div class="col-6 media">
+                                        <p id="MT_media" >000</p>
+                                    </div>
+                                </div>
+          
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row-1">
+            <div class="col-12 grafico">
+                <canvas id="myChart"></canvas>
+            </div>
+        </div>
+
+        <div class="row-1">
+            <div class="col-3" id="simula">
+                <span class="simulado">Simulado</span>
+            </div>
+
+            <div class="col-9">
+                <div class="row-1">
+                    <div class="col-2" id="data_simula">
+                        <span class="lado" >Data</span>
+                    </div>
+
+                    <div class="col-2"  id="melhor_materia">
+                        <span class="lado">Melhor Materia</span>
+                    </div>
+
+                    <div class="col-2" id="tempo">
+                        <span class="lado">Tempo</span>
+                    </div>
+
+                    <div class="col-2" id="nota">
+                        <span class="lado">Nota Geral</span>
+                    </div>
+
+                    <div class="col-2" id="status">
+                        <span class="lado">Status</span>
+         
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+</div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.1/dist/chart.min.js"></script>
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="../js/imagem.js"></script>
+
+    </section>
+</body>
+
+
+</html>

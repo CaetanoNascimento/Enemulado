@@ -1,0 +1,130 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id"
+        content="1083578414306-dff76m6erbo1v3qn2s4cucjbm64aaoko.apps.googleusercontent.com">
+    <title>Enemulado</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/styleMobile.css">
+    <script type="text/javascript" src="../js/script.js"></script>
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+</head>
+
+<body onload="jwt_auth_load_login()">
+    <div class="principal">
+        <div class="row-1">
+            <div class="col-5" id=logo>
+                <button><a href="/"><img src="../img/logo1.png"></a></button>
+
+            </div>
+
+            <div class="col-7">
+                <dl id="menu">
+                    <dt><a href="/">INÍCIO</a></dt>
+                    <dt><a href="/pages/quemsomos">QUEM SOMOS</a></dt>
+                    <a href="/usuarios/perfil"><img id="perfil" src="../img/Ellipse2.png"></a>
+                </dl>
+
+            </div>
+
+        </div>
+
+        <div class="row-1 ">
+            <div class="col-6 login">
+                <h4>Entrar com:</h4>
+                <div>
+                    <div class="g-signin2" data-onsuccess="onSignIn" ></div>
+                    <h4 id="ou">ou</h4>
+                </div>
+                <div class="lo">
+                    <input type="text" id="login" placeholder="Login">
+                    <input type="password" id="senha" placeholder="Senha">
+                    <div class="esqueci">
+                        <a id="c" href="/pages/esqueci">Esqueci minha senha</a>
+                    </div>
+
+                    <a id="senha1"><button onclick="jwt_login()">Entrar</button></a>
+                </div>
+
+                <div>
+                    <a id="senha1" href="/usuarios/cadastro"><button id="criar">Criar conta</button></a>
+                </div>
+
+
+
+            </div>
+
+            <div class="col-6 login2 login3">
+                <img src="../img/imagem_principal4.png">
+            </div>
+
+        </div>
+
+
+    </div>
+    <header class="header show-on-scroll">
+        <div class="row-1 ">
+            <div class="col-12 azul">
+                <div class="row-1">
+                    <div class="col-6">
+                        <div class="row-1">
+                            <div class="col-12">
+                                <div class="row-1">
+                                    <div class="col-4">
+                                        <a href="/pages/quemsomos"><span class="links quem_somos" id="rains">QUEM SOMOS</span></a>
+                                        <a href="#CARREIRA"><span class="links quem_somos">BLOG</span></a>
+                                        <a href="#ARAINS"><span class="links quem_somos">CONTATO</span></a>
+                                    </div>
+    
+                                    <div class="col-4">
+                                        <a href="#BLOG"><span class="links" id="carreira">CARREIRA</span></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#CONTATO"><span class="links" >A RAINS</span></a>
+                                    </div>
+        
+                                       
+                                        
+                                        
+                                 
+                                </div>
+                                <div class="row-1">
+                                    <div class="col-12 sociais">
+                                        <img src="img/S.png">
+                                        <img src="img/IN.png">
+                                        <img src="img/INSTA.png">
+                                        <img src="img/TWIT.png">
+                                    </div>              
+    
+                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+    
+        
+        
+        
+        
+        
+                    </div>
+        
+                    <div class="col-6 EB">
+                        <button><a href="/"><img id="enemuladinho" src="../img/logo_rodape.png"></a></button>
+                        <img id="burrozinho" src="../img/burrinho.png">
+                    </div>
+                </div>
+     
+                </div>
+    
+        </div>
+    </header>
+    <script src="../js/scroll.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<!-- Created by CodingLab |www.youtube.com/c/CodingLabYT-->
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Enemulado </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body onload="jwt_auth_load(); carregar_perfil();">
+    <div class="sidebar">
+        <div class="logo-details">
+
+            <a href="/"><div class="logo_name"><img src="../img/logo_rodape.png" class="rodape"></div></a>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="/usuarios/perfil">
+                    <img src="../img/perfil.png">
+                    <span class="links_name">MEU PERFIL</span>
+                </a>
+                <span class="tooltip">MEU PERFIL</span>
+            </li>
+            <li>
+                <a href="/usuarios/dashboard">
+                    <img src="../img/computador.png">
+                    <span class="links_name">DASHBOARD</span>
+                </a>
+                <span class="tooltip">DASHBOARD</span>
+            </li>
+
+
+            <li class="profile">
+                <div class="profile-details">
+                    <img src="../img/sair.png" profileImg>
+                    <div class="name_job">
+                        <div class="name">SAIR</div>
+                        <div class="job"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <section class="home-section">
+
+        <div class="row-1-dash editar">
+            <div class="col-12">
+                <span>EDITAR PERFIL E INFORMAÇÕES</span>
+            </div>
+            <div class="row-1-dash conta">
+                <div class="col-5 conta1">
+                    <div >
+                        <input type="text" id="nome" placeholder="Nome">
+                        <input type="text" id="email" placeholder="E-mail">
+                        <input class="inputLine" id="cpf" name="cpf" placeholder="CPF" type="text" maxlength="14" required>
+                        <input class="inputLine" id="telefone" name="telefone" maxlength="14" placeholder="Telefone" type="text" onkeydown="javascript: fMasc( this, mTel );">
+                    </div>
+
+                   <button onclick="atualizar_usuario()">Atualizar</button> 
+
+                    <a href="/pages/esqueci"><button id="criar">Alterar Senha</button></a>
+                </div>
+                <div class="col-8 princ7">
+                    <img src="../img/imagem_principal7.png">
+                </div>
+    
+            </div>
+            
+        </div>
+        
+       
+
+    
+        <script src="https://cdn.jsdelivr.net/npm/cleave.js@1.6.0/dist/cleave.min.js"></script>
+
+        <script>
+            new Cleave( '#cpf', {
+                blocks: [ 3, 3, 3, 2 ],
+                delimiters: [ '.', '.', '-' ],
+                numericOnly: true
+            } );
+    
+        </script>
+    </section>
+    <header class="header show-on-scroll">
+        <div class="row-1 ">
+            <div class="col-12 azul">
+                <div class="row-1">
+                    <div class="col-6">
+                        <div class="row-1">
+                            <div class="col-12">
+                                <div class="row-1">
+                                    <div class="col-4">
+                                        <a href="/pages/quemsomos"><span class="links quem_somos" id="rains">QUEM SOMOS</span></a>
+                                        <a href="#CARREIRA"><span class="links quem_somos">BLOG</span></a>
+                                        <a href="#ARAINS"><span class="links quem_somos">CONTATO</span></a>
+                                    </div>
+    
+                                    <div class="col-4">
+                                        <a href="#BLOG"><span class="links" id="carreira">CARREIRA</span></a>
+                                    </div>
+                                    <div class="col-4">
+                                        <a href="#CONTATO"><span class="links" >A RAINS</span></a>
+                                    </div>
+        
+                                       
+                                        
+                                        
+                                 
+                                </div>
+                                <div class="row-1">
+                                    <div class="col-12 sociais">
+                                        <img src="../img/S.png">
+                                        <img src="../img/IN.png">
+                                        <img src="../img/INSTA.png">
+                                        <img src="../img/TWIT.png">
+                                    </div>              
+    
+                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+    
+        
+        
+        
+        
+        
+                    </div>
+        
+                    <div class="col-6 EB">
+                        <button><a href="/"><img id="enemuladinho" src="../img/logo_rodape.png"></a></button>
+                        <img id="burrozinho" src="../img/burrinho.png">
+                    </div>
+                </div>
+     
+                </div>
+    
+        </div>
+    </header>
+    <script src="../js/scroll.js"></script>
+    <script src="../js/imagem.js"></script>
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

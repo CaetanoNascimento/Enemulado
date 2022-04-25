@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/script.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.4.0/moment.min.js"></script>
+
+
+    <link rel="stylesheet" href="../css/styleMobile.css">
+
+    <title>Enemulado</title>
+
+</head>
+
+<body  onload="jwt_auth_load();enemulado.tempo();enemulado.load_questao()" >
+<script type="text/javascript">
+    window.addEventListener("beforeunload", function(event) {
+
+    closeWin();
+});
+
+
+</script>
+
+
+    <div id="innerHTMLtxt"></div>
+    <div id="textContenttxt">
+        <div>
+            <div class="principal">
+                <div class="row-1">
+                    <div class="col-5" id=logo>
+                       <a href="/"> <button ><img src="../img/logo1.png"></button></a>
+
+                    </div>
+                    <div class="col-7">
+                        <dl id="menu">
+                            <a href="/usuarios/perfil"><img id="perfil" src="../img/Ellipse2.png"></a>
+                        </dl>
+
+                    </div>
+
+                </div>
+                <div class="row-1">
+
+                    <div class="col-7 questao">
+
+
+
+                        <div class="titulo">
+
+
+                            <span class="titulo1" id="numeroquestao"></span>
+                            <span class="titulo1" id="nomeinstituicao"></span>
+                            <span class="titulo1" id="corprova"></span>
+                            <span class="titulo1" id="anoprova"></span>
+
+                        </div>
+
+                        <div id="posicao_imagem_TOPO"></div>
+
+                        <div id="textoprincipal"></div>
+
+                        <div id="posicao_imagem_CENTRO"></div>
+
+                        <div id="continuacao_texto"></div>
+
+                        <div id="posicao_imagem_FINAL"></div>
+
+                        <div id="textoquestao"></div>
+
+                        <span class="alternativas">A</span>
+                        <div onclick="enemulado.resposta_A()" id="alternativa_a" class="alternativas_enemulado">
+                        </div>
+
+                        <span class="alternativas">B</span>
+                        <div onclick="enemulado.resposta_B()" id="alternativa_b" class="alternativas_enemulado">
+                        </div>
+
+                        <span class="alternativas">C</span>
+                        <div onclick="enemulado.resposta_C()" id="alternativa_c" class="alternativas_enemulado">
+                        </div>
+
+                        <span class="alternativas">D</span>
+                        <div onclick="enemulado.resposta_D()" id="alternativa_d" class="alternativas_enemulado">
+                        </div>
+
+                        <span class="alternativas">E</span>
+                        <div onclick="enemulado.resposta_E()" id="alternativa_e" class="alternativas_enemulado">
+                        </div>
+
+                        <div class="botoes">
+                            <button onclick="enemulado.verificar_resposta(); myVar = setTimeout(enemulado.time, 3000)"
+                                class="bu u">Verificar Resposta</button>
+                            <button onclick="enemulado.calcular_resposta()" class="bu"> Proxima Pergunta</button>
+
+                        </div>
+
+                    </div>
+                    <div class="col-5 prooo">
+                        <img id="prooo1" src="../img/prooo.png">
+                        <img id="prooo1" src="../img/prooo.png">
+                    </div>
+                </div>
+
+
+
+            </div>
+            <header class="header show-on-scroll">
+                <div class="row-1 ">
+                    <div class="col-12 azul">
+                        <div class="row-1">
+                            <div class="col-6">
+                                <div class="row-1">
+                                    <div class="col-12">
+                                        <div class="row-1">
+                                            <div class="col-4">
+                                                <a href="/pages/quemsomos"><span class="links quem_somos"
+                                                        id="rains">QUEM SOMOS</span></a>
+                                                <a href="#CARREIRA"><span class="links quem_somos">BLOG</span></a>
+                                                <a href="#ARAINS"><span class="links quem_somos">CONTATO</span></a>
+                                            </div>
+
+                                            <div class="col-4">
+                                                <a href="#BLOG"><span class="links" id="carreira">CARREIRA</span></a>
+                                            </div>
+                                            <div class="col-4">
+                                                <a href="#CONTATO"><span class="links">A RAINS</span></a>
+                                            </div>
+
+
+
+
+
+                                        </div>
+                                        <div class="row-1">
+                                            <div class="col-12 sociais">
+                                                <img src="../img/S.png">
+                                                <img src="../img/IN.png">
+                                                <img src="../img/INSTA.png">
+                                                <img src="../img/TWIT.png">
+                                            </div>
+
+
+
+                                        </div>
+                                    </div>
+                                </div>
+
+
+
+
+
+
+                            </div>
+
+                            <div class="col-6 EB">
+                                <button><a href="/"><img id="enemuladinho" src="../img/logo_rodape.png"></a></button>
+                                <img id="burrozinho" src="../img/burrinho.png">
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </header>
+            <script src="../js/scroll.js"></script>
+
+
+
+</body>
+
+</html>
